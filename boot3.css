@@ -1,0 +1,420 @@
+/* white #FDFDFA */
+/* lighter green #C6DABF */
+/* Primary Color #88D498 */
+/* Dark Green #1A936F */
+/* Black #1D1D1D */
+
+body{
+	font-family: 'Pacifico', cursive!important;
+	color: #FDFDFA!important;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('main.jpg') center fixed no-repeat;
+	background-size: 100vw 100vh;
+}
+
+/* Header */
+.info{
+	background: #1D1D1D;
+}
+
+.primary-color{
+	color: #88D498;
+}
+
+.info h2 {
+	word-spacing:.6rem;
+}
+
+.info a{
+	transition: color 2s ease-in-out;
+	text-decoration: none!important;
+}
+
+.info a:hover{
+	color: #FDFDFA;
+}
+
+/* Main Screen */
+#header{
+	min-height: calc(100vh - 95px);
+	background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('avocados.jpg');
+	background-position: center;
+	background-size:cover;
+	min-width: 100vw;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.height-90{
+	min-height: calc(100vh -95px);
+}
+
+.banner h1{
+	border-top: 6px dotted #1A936F;
+	border-bottom: 6px dotted #1A936F;
+	animation: fromLeft;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	opacity:0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	50%{
+		transform: translateX(30px);
+	}
+	100%{
+		transform: tranlateX(0);
+		opacity: 1;
+	}
+}
+
+.main-btn {
+	color: #1A936F!important;
+	font-size: 2rem!important;
+	border: 2px solid #1A936F!important;
+	transition: all 1s ease-in-out!important;
+}
+
+.main-btn:hover{
+	color: #1D1D1D!important;
+	border: 2px solid #FDFDFA!important;
+	background: #FDFDFA;
+}
+
+.sushi-btn{
+	animation:fromRight;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fromRight{
+	0%{
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	50%{
+		transform: translateX(-30px);
+	}
+	100%{
+		transform: tranlateX(0);
+		opacity: 1;
+	}
+}
+
+.header-link{
+	display: inline-block;
+	position: absolute;
+	bottom: 5%;
+	left:50%;
+	background: #C6DABF;
+	color: #1D1D1D!important;
+	border-radius: 10px;
+	transition: all 2s ease-in-out!important;
+	animation: fromBottom;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.header-link:hover{
+	color: #FDFDFA!important;
+}
+
+@keyframes fromBottom{
+	0%{
+		transform: translateY(-10px);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(-10px);
+	}
+}
+
+/* Lastest Content */
+
+.item-container{
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(rgb(0,0,0), rgb(0,0,0));
+	transition: all 2s ease-in-out;
+}
+
+.item-img{
+	transition: all 2s ease-in-out;
+}
+
+.item-container:hover .item-img{
+	transform: scale(1.2);
+	opacity:.5;
+}
+
+.item-link{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	color: #1A936F;
+	font-size: 2rem;
+	border-top:3px solid #1A936F;
+	border-bottom: 3px solid #1A936F;
+	transition: all 2s ease-in-out;
+	opacity:0;
+}
+
+.item-container:hover .item-link{
+	opacity: 1;
+}
+
+.item-link:hover{
+	color:#FDFDFA;
+}
+
+.item-container:hover{
+	outline: 10px solid #C6DABF;
+	outline-offset: .8rem;
+}
+
+/* Episodes */
+#episodes {
+	background:linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url('avocados.jpg')center/cover fixed no-repeat!important;
+} 
+
+.dark-green{
+	color: #1A936F;
+}
+
+#episodes h2{
+	color: #1A936F!important;
+}
+
+.special{
+	border: 3px solid #C6DABF!important;
+	position: relative!important;
+	color: #1A936F!important;
+}
+
+.special-text{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #C6DABF;
+}
+
+/* About */
+#about-btn{
+	background: #C6DABF!important;
+}
+
+.about-pictures{
+	position:relative;
+}
+
+.about-image{
+	position:absolute;
+	width: 180px;
+	transition: all 2s ease-in-out;
+	opacity: 0.9;
+}
+
+.img-1{
+	left: 20%;
+	top: 20%;
+	z-index:10;
+}
+
+.img-2{
+	left: 0%;
+	top: 0%;
+}
+
+.img-3{
+	left: 40%;
+	top: 45%;
+	z-index:20;
+}
+
+.img-4{
+	left: 40%;
+	top: 0%;
+}
+
+.img-5{
+	left: 0%;
+	top: 45%;
+}
+
+.about-image:hover{
+	outline: 10px solid #88D498;
+	outline-offset: .8rem;
+	transform: scale(1.3) rotate(20deg);
+	z-index: 30;
+	opacity: 1;
+}
+
+.about-pictures:hover .about-image:not(:hover){
+	opacity:.5;
+}
+
+#about h2{
+	color: #FDFDFA!important;
+}
+
+#about h1{
+	color: #88D498!important;
+}
+
+/* Review */
+.review-img{
+	width: 150px;
+}
+
+.reviewItem{
+	background-color: rgba(26,147,111,.3);
+	border-top: 2px solid #C6DABF;
+	border-bottom: 2px solid #C6DABF;
+	clip-path: polygon(5% 0, 100% 0, 90% 100%,0 100%)!important;
+}
+
+/* Team */
+.team-icons a{
+	color: #1A936F;
+	transition: all 2s ease-in-out;
+}
+
+.team-icons a:hover{
+	color: #1D1D1D;
+	transform: translateY(-5px);
+}
+
+.team-card{
+	background-color: #88D498;
+}
+
+/* Contact */
+
+.height-60{
+	min-height: 60vh;
+}
+
+#contact .card{
+	background: rgba(136,212,152,.5);
+	transition: all 2s ease-in-out;
+}
+
+#contact .card:hover{
+	background: rgba(0,0,0,.8);
+}
+
+#contact .card-header{
+	color:#FDFDFA;
+}
+
+#contact .input-group-text{
+	background:#1A936F;
+	border-color: #1A936F;
+	color: #C6DABF;
+}
+
+#contact .card input{
+	color: #1D1D1D;
+}
+
+#contact .card input::placeholder{
+	color: #1D1D1D;
+}
+
+.contact-btn{
+	color: #1A936F;
+	border-color: #1A936F!important;
+	background: transparent;
+	transition: all 2s ease-in-out!important;
+}
+
+.contact-btn:hover{
+	background: #FDFDFA;
+	color: #1A936F;
+	border-color: #FDFDFA!important;
+}
+
+/* back to top */
+#back-to-top{
+	background: #C6DABF!important;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.scrollTop{
+	position: fixed;
+	bottom: 70px;
+	right: 10px;
+}
+
+.topButton{
+	color: #1A936F;
+}
+
+/* Nav Bar */
+.navbar{
+	background: #C6DABF;
+	padding: 20px 20px!important;
+	transition: all 1s ease-in-out!important;
+}
+
+.navbar-background{
+	padding: 5px 20px;
+}
+
+.navbar-brand{
+	font-size: 30px;
+	transition: all 1s ease-in-out!important;
+}
+
+.navbar-brand:hover{
+	color: #1D1D1D!important;
+}
+
+.nav-link{
+	color: #1D1D1D;
+	text-decoration: none;
+	transition: all 2s ease-in-out;
+	font-size: 23px;
+}
+
+.nav-link:hover{
+	color: #1A936F;
+}
+
+.nav-btn {
+	background:transparent;
+	color: #1A936F;
+	border: 2px solid #1A936F!important;
+	font-size: 23px;
+	transition: all 2s ease-in-out!important;
+}
+
+.nav-btn:hover{
+	color: #1D1D1D;
+	border: 2px solid #1D1D1D!important;
+	transform: rotate(10deg);
+}
+
+.toggler-btn{
+	padding: 5px!important;
+	transition: all 2s ease-in-out!important;
+	border: none!important;
+}
+
+
+
+
+
+
+
